@@ -1,0 +1,392 @@
+@import "base"
+.m-slider
+	position: relative
+	margin-bottom: 25px
+	overflow: hidden
+	border-radius: 10px 80px 10px 10px
+	img
+		display: block
+.m-slider__green, .m-slider__violet
+	.m-slider__text
+		max-width: 600px			
+		strong
+			margin-bottom: 10px
+	.m-slider__bg
+		@include background-image(linear-gradient(left, rgba(2,159,200,1) 20%, rgba(2,159,200,0)))
+	.m-btn
+		box-shadow: 1px 1px 3px rgba(0,0,0,.3)
+.m-slider__violet
+	.m-slider__bg
+		@include background-image(linear-gradient(left, rgba(173,34,123,1) 20%, rgba(173,34,123,0)))
+.m-slider__text
+	position: absolute
+	top: 35px
+	left: 35px
+	max-width: 400px  
+	color: #FFF 
+	line-height: 1.2 
+	text-shadow: 0 1px 5px rgba(0,0,0,.5)
+	+font
+	strong
+		display: block
+		margin-bottom: 20px
+		font-size: 58px
+		font-weight: normal
+		line-height: .9
+	span
+		display: block
+		margin-bottom: 10px
+		font-size: 32px
+.m-slider__bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	@include background-image(linear-gradient(left, rgba(37,114,193,1) 20%, rgba(37,114,193,0)))
+.m-slider__nav
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 23px 
+	text-align: center
+	font-size: 0
+	z-index: 200  
+	a
+		display: inline-block
+		width: 24px
+		height: 5px
+		margin: 0 3px
+		background: rgba(255,255,255,.6)  
+		&.is-active
+			background: rgba(255,255,255,1)  
+.m-layout
+	margin-bottom: 15px
+	+clr
+.m-col
+	float: left
+	width: 313px
+	margin-left: 10px
+	&:first-child
+		margin-left: 0 
+.m-col_mod
+	width: 636px
+.m-block
+	position: relative
+	padding: 3px
+	margin-bottom: 10px
+	box-shadow: 0 1px 5px rgba(0,0,0,.3)
+	background: #FFF
+	border-radius: 8px
+	font-size: 12px 
+	line-height: 1.2
+.m-block_green
+	.m-block__title
+		background: $bl
+		&:after
+			border-color: $bl transparent transparent transparent
+	.m-block__down
+		background: $bl
+		&:after
+			border-color: transparent transparent $bl transparent
+.m-block_violet
+	.m-block__title
+		background: $vl
+		&:after
+			border-color: $vl transparent transparent transparent
+	.m-block__down
+		background: $vl
+		&:after
+			border-color: transparent transparent $vl transparent
+.m-block_mod
+	.m-block__content
+		padding: 15px
+		@include background-image(linear-gradient(top, #e8e8e8, #fff 20%, #fff 60%, #e8e8e8))
+.m-block__title
+	position: relative
+	padding: 15px 15px 10px 15px
+	background: $gr 
+	border-radius: 5px 5px 0 0
+	+font
+	font-size: 24px
+	color: #FFF 
+	&:after
+		content: ""
+		position: absolute
+		bottom: -10px
+		left: 50%
+		margin-left: -10px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 10px 10px 0 10px
+		border-color: $gr transparent transparent transparent
+.m-block__content
+	padding: 20px 15px
+	border-radius: 5px
+	@include background-image(linear-gradient(bottom, #e8e8e8 0px, #fff 100px))
+.m-block__down
+	position: absolute
+	left: 3px
+	right: 3px
+	bottom: 3px
+	height: 6px
+	background: $gr 
+	border-radius: 0 0 5px 5px
+	&:after
+		content: ""
+		position: absolute
+		top: -10px
+		left: 50%
+		margin-left: -10px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 0 10px 10px 10px
+		border-color: transparent transparent $gr transparent
+.m-about
+	min-height: 410px
+.m-txt__1, .m-txt__2, .m-txt__3
+	margin-bottom: 15px		
+	text-align: justify
+.m-txt__1
+	color: #545454 
+.m-txt__2
+	color: $gr
+.m-txt__3
+	font-size: 11px 
+	color: $gr 
+.m-txt__3_mod
+	color: #545454
+.m-news, .m-support
+	min-height: 158px
+.m-news
+	li
+		padding-top: 10px
+		margin-top: 10px
+		border-top: 1px solid #e6e6e6
+		&:first-child
+			padding: 0
+			margin: 0
+			border: 0 
+	span
+		display: block
+		margin-bottom: 15px 
+		color: $gr 
+	p
+		margin-bottom: 15px
+		color: #636363
+	a
+		color: $gr  
+		&:hover
+			text-decoration: underline
+.m-news_blue
+	min-height: 209px
+	a
+		color: $bl 
+.m-news_violet
+	min-height: 88px
+	a
+		color: $vl 
+.m-news__title
+	+font
+	color: $gr
+	font-size: 15px  
+	line-height: 1
+.m-support__faq
+	padding-top: 10px
+	margin-top: 10px
+	border-top: 1px solid #e6e6e6
+.m-news__all, .m-support__faq
+	a
+		color: #636363
+		&:hover
+			text-decoration: underline
+.m-support
+	p
+		color: #636363
+.m-support__title
+	margin-bottom: 15px 
+	+font
+	color: $gr
+	font-size: 15px
+.m-support__faq
+	a
+		color: $gr  
+.m-hotspot
+	+clr
+	input
+		float: left
+		width: 180px
+		height: 30px
+		padding: 0 10px
+		border: 1px solid #ddd
+		border-radius: 3px
+		box-shadow: 0 2px 5px rgba(0,0,0,.15) inset
+	.m-btn
+		float: right
+.m-btn
+	height: 32px
+	padding: 0 10px
+	border: 2px solid #9ddfe9
+	background: $bl
+	border-radius: 5px
+	+font
+	font-weight: bold
+	font-size: 16px
+	color: #fff  
+	&:hover
+		background: #10c1dc 
+a
+	&.m-btn
+		display: inline-block
+		line-height: 32px
+.m-btn_violet
+	background: $vl
+	border-color: #d7a0c3 
+	&:hover
+		background: #d72e9a 
+.m-btn_green
+	@include background-image(linear-gradient(top, #8fc43c, #269e45))
+	border-color: #fff
+	&:hover
+		@include background-image(linear-gradient(top, #8fc43c 40%, #269e45))
+.m-app
+	overflow: hidden
+	img
+		float: right
+		margin-left: 10px
+		border: 3px solid #9fabb4
+		border-radius: 10px
+	p
+		margin-bottom: 7px
+		padding-bottom: 10px
+		border-bottom: 1px solid #e0e0e0 
+		font-size: 11px
+		overflow: hidden
+.m-app_mod
+	margin-bottom: 15px
+	.m-app__apple
+		margin-right: 10px
+		+s(link-app-1-b)
+	.m-app__android
+		margin-right: 10px
+		+s(link-app-2-b)
+	.m-btn
+		height: 33px
+.m-app__title, .m-adv__title
+	margin-bottom: 10px
+	+font
+	font-size: 24px
+	font-weight: bold
+	color: #545454 
+	line-height: .9
+.m-app__links 	 
+	overflow: hidden
+	a
+		float: left
+.m-app__apple
+	margin-right: 4px
+	+s(link-app-1)
+.m-app__android
+	+s(link-app-2)
+.m-adv
+	overflow: hidden
+	.m-btn
+		margin-top: 15px
+.m-adv_mod
+	.m-adv__pic 	
+		background: $bl
+		border-color: $bl 
+.m-adv__pic
+	float: right
+	border: 3px solid $vl
+	background: $vl 
+	border-radius: 8px
+	span
+		display: block
+		padding: 8px 0
+		text-align: center
+		font-weight: bold
+		color: #FFF 
+	img
+		display: block
+		border-radius: 0 0 5px 5px
+.m-benefits
+	overflow: hidden
+.m-benefits__col	
+	float: left
+	width: 292px
+	&:first-child
+		margin-right: 15px
+	img
+		margin-bottom: 15px 
+.m-reviews
+	text-align: right
+	li
+		text-align: left
+		margin-bottom: 15px
+	p
+		span
+			+font
+			font-size: 14px
+			color: $bl
+		i
+			color: #8d9ba6 
+.m-reviews__title
+	text-align: left
+	margin-bottom: 10px
+	+font
+	color: $bl
+	font-size: 20px  
+.m-studies, .m-benefits-list
+	margin-bottom: -10px
+	li
+		position: relative
+		margin-left: 80px
+		padding: 10px 0
+		border-top: 1px solid #e6e6e6
+		&:first-child
+			padding: 0 0 10px 0 
+			border: none
+		span
+			font-size: 14px
+			color: $bl
+		i
+			position: absolute
+			top: 50%
+			left: -90px
+			margin-top: -30px
+.m-benefits-list
+	padding: 20px 0
+	li
+		padding: 12px 0
+		span
+			display: block
+			margin-bottom: 7px
+			color: $vl 
+.m-ico-1
+	+s(ico1) 
+.m-ico-2
+	+s(ico2) 
+.m-ico-3
+	+s(ico3)
+.m-ico-4
+	+s(ico4) 
+.m-ico-5
+	+s(ico5)
+.m-ico-6
+	+s(ico6)
+.m-ico-7
+	+s(ico7) 
+.m-ico-8
+	+s(ico8) 
+.m-ico-9
+	+s(ico9)
+.m-ico-10
+	+s(ico10)
+.m-ico-11
+	+s(ico11) 
+.m-ico-12
+	+s(ico12)
+	 

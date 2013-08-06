@@ -1,0 +1,270 @@
+/* Landing Page */ 
+.large-banner {
+height:518px;
+position:relative;
+width:960px;
+}
+
+#landingMain,
+#landingMain span {
+background:url(../img/landing-main.jpg) no-repeat;
+font-size:2.88385em; /* 36 / 12.4833 */
+height:100%;
+line-height:1.25em;
+width:960px;
+}
+
+#landingSub {
+font-size:1.2817em; /* 16 / 12.4833 */
+left:0;
+position:absolute;
+top:6em;
+z-index:-1;
+}
+.landing-button {
+cursor:pointer;
+display:block;
+position:absolute;
+top:400px;
+z-index:1;
+}
+
+.landing-button,
+.landing-button span {
+background:url(../img/sprite.png);
+color:#545454;
+height:95px;
+padding:10px;
+text-decoration:none;
+width:251px;
+}
+
+.landing-button strong {
+font-size:2.08278em; /* 26 / 12.4833 */
+line-height:1.25em;
+text-decoration:underline;
+}
+
+#buttonToBusiness {
+left:69px;
+}
+
+a#buttonToBusiness:hover,
+a#buttonToBusiness:active,
+a#buttonToBusiness:hover span,
+a#buttonToBusiness:active span {
+background-position:0 -120px;
+}
+
+#buttonToBusiness strong {
+color:#0b9abd;
+}
+
+#buttonToConsumer {
+left:356px;
+}
+
+a#buttonToConsumer:hover,
+a#buttonToConsumer:active,
+a#buttonToConsumer:hover span,
+a#buttonToConsumer:active span {
+background-position:-300px -120px;
+}
+
+#buttonToConsumer,
+#buttonToConsumer span {
+background-position:-300px 0;
+}
+
+#buttonToConsumer strong {
+color:#900270;
+}
+
+/* modifications for responsive design for frontpage*/
+@media only screen and (max-width: 960px) {
+	.large-banner p {
+		max-width:300px;	
+	}
+	#main, .large-banner {
+		width: 100%;
+		height:auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	header section div.top {
+		width:137px;
+	}
+	.large-banner  {
+		display:none;
+	}
+	header {
+		background:url("../img/header-stripes.png") repeat-x;
+		min-height:150px;
+	}
+	#main header div {
+		margin-top:-10px;
+		height:120px;
+	}
+	header h2 a, 
+	header h2 a span {
+		background:url("../img/theCloudLogoSmall.gif") no-repeat;
+		width:150px;
+		height:50px;
+		font-size:8px;
+	}
+	header nav,
+	header nav a,
+	header nav a span {
+		background-image:none;
+		background-repeat:no-repeat;
+		height:auto;
+	}
+	header h2 a, 
+	header h2 a span {
+		top:47px;
+		left:10px;
+	}
+	header .header-search {
+		margin-left:-113px;
+	}
+	.main-img-small {
+		margin-bottom:10px;
+	}
+	.landing-button {
+		position:static;
+		float:left;
+		margin-left:25px;
+	}
+	.landing-button div {
+		display:none;
+	}
+	#splashButtons {
+		margin:30px auto;
+		height:150px;
+		width:620px;
+		margin-bottom:60px;
+	}
+	footer .note {
+		position:absolute;
+		top:-80px;
+		margin:0px auto;
+		padding:10px;
+	}
+}
+@media only screen and (max-width: 630px) {
+	.large-banner p {
+		max-width:none;
+	}
+	.large-banner {
+		height:350px;	
+	}
+	#buttonToConsumer {
+		top: 90px;
+		left:85px;
+	}
+	#buttonToBusiness {
+		top:220px;	
+		left:85px;
+	}
+	#splashButtons {
+		width:450px;
+		margin-bottom:130px;
+	}
+	.landing-button {
+		background: url("../img/splash-buttons-small.png") no-repeat scroll 0 0 transparent;
+		height: 165px;
+		width: 125px;
+		margin-left:50px;
+	}
+	#buttonToConsumer {
+		background-position:-145px 0px;
+	}
+	a#buttonToConsumer:hover {
+		background-position:-145px -186px;
+	}
+	#buttonToBusiness {
+		background-position: 0 0;
+	}
+	a#buttonToBusiness:hover {
+		background-position: 0px -186px;
+	}
+	footer .note {
+		position:absolute;
+		top:-80px;
+		margin:0px auto;
+		padding:10px;
+	}
+}
+@media only screen and (max-width: 478px) {
+	header .header-search {
+		margin-left:0px;
+	}
+	#splashButtons {
+		width:305px;
+		margin-bottom:170px;
+	}
+	.landing-button {
+		margin-left:5px;
+	}
+	#buttonToConsumer {
+		margin-left:5px;
+	}
+	footer .note {
+		position:absolute;
+		top:-120px;
+		margin:0px auto;
+		padding:10px;
+	}
+}
+@media only screen and (max-width: 319px) {
+	header h2 a {
+		margin:25px 0px;
+	}
+	header .header-search {
+		top:80px;
+		margin-top:0px;
+	}
+	header .header-submit {
+		top:81px;
+	}
+	header h2 a, 
+	header h2 a span {
+		top:52px;
+	}
+	header section div.top {
+		width:100px;
+	}
+
+	#splashButtons {
+		width:237px;
+		margin-bottom:170px;
+	}
+	.landing-button {
+		margin-left:0px;
+		width:97px;
+		height:130px;
+		background-size:235px auto;
+	}
+	#buttonToConsumer {
+		margin-left:3px;
+	}
+	#buttonToConsumer {
+		background-position:-118px 0px;
+	}
+	a#buttonToConsumer:hover {
+		background-position:-118px -151px;
+	}
+	#buttonToBusiness {
+		background-position: 0 0;
+	}
+	a#buttonToBusiness:hover {
+		background-position: 0px -150.83px;
+	}
+	footer .note {
+		position:absolute;
+		top:-150px;
+		margin:0px auto;
+		padding:10px;
+	}
+}
