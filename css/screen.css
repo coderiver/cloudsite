@@ -180,3 +180,9 @@ a.m-btn { display: inline-block; line-height: 32px; }
 .m-ico-11 { background: url('../img/icons-sd51ac0917a.png') 0 -463px no-repeat; width: 80px; height: 60px; }
 
 .m-ico-12 { background: url('../img/icons-sd51ac0917a.png') 0 0 no-repeat; width: 80px; height: 60px; }
+
+body { background: url(../img/body-bg.jpg); }
+
+.header { border-bottom: 1px solid #cacaca; }
+
+#main { padding: 0 20px; background: white; }
